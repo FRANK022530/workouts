@@ -1,5 +1,6 @@
-const express =  require('express')
-const Workout = require('../models/workoutModel')
+const express = require("express");
+const router = express.Router();
+
 const {     
     createWorkOut,
     getWorkOuts,
@@ -9,7 +10,6 @@ const {
 
        } = require('../controllers/workoutController')
 
-const router = express.Router()
 
 router.get('/',getWorkOuts);
 router.get('/:id',getSingleWorkOuts);
